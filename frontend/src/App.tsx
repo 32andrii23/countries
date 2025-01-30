@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { RouterKey, routerKeyToComponentMap } from "@/constants";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { RouterKey, routerKeyToComponentMap } from '@/constants';
 
 const App = () => {
   return (

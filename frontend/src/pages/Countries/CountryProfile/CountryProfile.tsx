@@ -1,12 +1,12 @@
-import { Button } from "@/components/ui/Button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import { RouterKey } from "@/constants";
-import { useCountryInfo } from "@/hooks/useCountryInfo";
-import { ArrowLeft, Loader2 } from "lucide-react";
-import { Suspense } from "react";
-import { Link, useParams } from "react-router-dom";
-import { BorderCountries } from "./BorderCountries";
-import { CountryPopulationChart } from "./CountryPopulationChart";
+import { Button } from '@/components/ui/Button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { RouterKey } from '@/constants';
+import { useCountryInfo } from '@/hooks/useCountryInfo';
+import { ArrowLeft, Loader2 } from 'lucide-react';
+import { Suspense } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { BorderCountries } from './BorderCountries';
+import { CountryPopulationChart } from './CountryPopulationChart';
 
 export const CountryProfile = () => {
   const { countryName } = useParams();
@@ -15,7 +15,7 @@ export const CountryProfile = () => {
     data: country,
     isLoading: isCountryLoading,
     error: countryError,
-  } = useCountryInfo(countryName || "");
+  } = useCountryInfo(countryName || '');
 
   if (isCountryLoading) return <Loader2 className="animate-spin mx-auto" />;
 

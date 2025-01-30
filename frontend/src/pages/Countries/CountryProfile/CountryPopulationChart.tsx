@@ -4,10 +4,10 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/Card";
-import { ChartContainer, ChartTooltip } from "@/components/ui/chart";
-import { formatPopulation } from "@/lib/utils";
-import { PopulationDataDto } from "@/types";
+} from '@/components/ui/Card';
+import { ChartContainer, ChartTooltip } from '@/components/ui/chart';
+import { formatPopulation } from '@/lib/utils';
+import { PopulationDataDto } from '@/types';
 import {
   CartesianGrid,
   Line,
@@ -15,7 +15,7 @@ import {
   ResponsiveContainer,
   XAxis,
   YAxis,
-} from "recharts";
+} from 'recharts';
 
 interface CountryPopulationChartProps {
   populationData: PopulationDataDto[];
@@ -29,7 +29,7 @@ export const CountryPopulationChart: React.FC<CountryPopulationChartProps> = ({
       <CardHeader>
         <CardTitle>Country Population Over Time</CardTitle>
         <CardDescription>
-          Population growth from {populationData[0].year} to{" "}
+          Population growth from {populationData[0].year} to{' '}
           {populationData[populationData.length - 1].year}
         </CardDescription>
       </CardHeader>
@@ -37,8 +37,8 @@ export const CountryPopulationChart: React.FC<CountryPopulationChartProps> = ({
         <ChartContainer
           config={{
             population: {
-              label: "Population",
-              color: "hsl(var(--chart-1))",
+              label: 'Population',
+              color: 'hsl(var(--chart-1))',
             },
           }}
           className="h-[400px] w-full"

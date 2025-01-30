@@ -1,8 +1,8 @@
-import { Badge } from "@/components/ui/Badge";
-import { cn } from "@/lib/utils";
-import { BorderCountryDto } from "@/types";
-import { Pointer } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Badge } from '@/components/ui/Badge';
+import { cn } from '@/lib/utils';
+import { BorderCountryDto } from '@/types';
+import { Pointer } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface BorderCountriesProps {
   borderCountries: BorderCountryDto[];
@@ -27,8 +27,8 @@ export const BorderCountries: React.FC<BorderCountriesProps> = ({
           </Badge>
           <Pointer
             className={cn(
-              "w-4 h-4 opacity-100 group-hover:opacity-0 transition",
-              index === 0 ? "absolute -bottom-2 -left-2 rotate-45" : "hidden"
+              'w-4 h-4 opacity-100 group-hover:opacity-0 transition',
+              index === 0 ? 'absolute -bottom-2 -left-2 rotate-45' : 'hidden',
             )}
           />
         </Link>

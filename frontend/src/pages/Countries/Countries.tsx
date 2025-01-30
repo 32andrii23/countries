@@ -1,7 +1,7 @@
-import { Card, CardHeader, CardTitle } from "@/components/ui/Card";
-import { CountriesList } from "./CountriesList";
-import { Suspense } from "react";
-import { Loader2 } from "lucide-react";
+import { Card, CardHeader, CardTitle } from '@/components/ui/Card';
+import { CountriesList } from './CountriesList';
+import { Suspense } from 'react';
+import { Loader2 } from 'lucide-react';
 
 export const Countries = () => {
   return (

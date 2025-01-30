@@ -1,8 +1,8 @@
-import { Card, CardContent } from "@/components/ui/Card";
-import { RouterKey } from "@/constants";
-import { useAvailableCountries } from "@/hooks/useAvailableCountries";
-import { Loader2 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Card, CardContent } from '@/components/ui/Card';
+import { RouterKey } from '@/constants';
+import { useAvailableCountries } from '@/hooks/useAvailableCountries';
+import { Loader2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const CountriesList = () => {
   const {
@@ -21,7 +21,7 @@ export const CountriesList = () => {
       {countries.map((country) => (
         <Link
           key={country.countryCode}
-          to={RouterKey.COUNTRY_PROFILE.replace(":countryName", country.name)}
+          to={RouterKey.COUNTRY_PROFILE.replace(':countryName', country.name)}
           className="block hover:no-underline"
         >
           <Card className="transition-all duration-300 hover:shadow-lg hover:scale-105">

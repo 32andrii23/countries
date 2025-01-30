@@ -17,7 +17,12 @@ export const CountryProfile = () => {
     error: countryError,
   } = useCountryInfo(countryName || '');
 
-  if (isCountryLoading) return <Loader2 className="animate-spin mx-auto" />;
+  if (isCountryLoading)
+    return (
+      <div className="h-screen w-screen flex items-center justify-center">
+        <Loader2 className="animate-spin w-10 h-10" />
+      </div>
+    );
 
   if (!country || countryError) return <div>Unable to fetch country</div>;
 
